@@ -1,0 +1,48 @@
+---
+title: LocoNotas
+description: "Field notes from the floor: reading notes, experiments, and observations from LocoLabo."
+template: splash
+hero:
+  tagline: |
+    Notes from the floor.
+
+    Reading notes, experiments, and observations from LocoLabo.
+  image:
+    file: ../../assets/notas.svg
+  actions:
+    - text: Read the notes
+      link: /notes/
+      icon: right-arrow
+      variant: primary
+    - text: Reading list
+      link: /reading/
+      icon: open-book
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Reading notes" icon="open-book">
+    Books, papers, videos, and articles, with the source and a clear confidence label. A summary is not a finding until it is checked.
+  </Card>
+  <Card title="Experiment logs" icon="list">
+    Dated tests with the command line, the raw result, and the failure modes. Including the runs that did not work.
+  </Card>
+  <Card title="Field notes" icon="pencil">
+    Hardware quirks, driver cliffs, thermal surprises, and the things that only show up after the third reboot.
+  </Card>
+  <Card title="What lives elsewhere" icon="external">
+    Formal papers live on [research.borck.dev](https://research.borck.dev). Stable project documentation lives on the project sites.
+  </Card>
+</CardGrid>
+
+## What this is
+
+LocoNotas is the lab notebook. It is where observations live before they become findings, and where reading notes live before they become project documentation. Project sites stay stable. Notes stay dated.
+
+## Start here
+
+- [All notes](/notes/): the chronological index.
+- [Reading](/reading/): books and papers that shape the lab's thinking.
+- [About](/about/): what belongs here, what does not, and how notes are labelled.
